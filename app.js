@@ -27,9 +27,9 @@ addProductBtn.addEventListener("click", () => {
   const td1 = document.createElement("td");
   const td2 = document.createElement("td");
   const td3 = document.createElement("td");
-  // //new code
+
   //  const td4 = document.createElement("td");
-  // //  end
+
 
 
 
@@ -63,7 +63,7 @@ const subtotal = calculateSubTotal()
 const subtotalToDisplay = document.getElementById("sub-total");
 subtotalToDisplay.innerText=subtotal
 
-let tax = subtotal * 0.2;
+let tax = subtotal * 0.02;
 document.getElementById('tax').innerText=tax.toFixed(2)
 document.getElementById('grand-total').innerText= subtotal+tax
 document.getElementById('grand-total-2').innerText= subtotal+tax
